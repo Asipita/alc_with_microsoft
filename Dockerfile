@@ -6,7 +6,7 @@ COPY package.json temp/package.json
 
 RUN cd temp/ && npm install
 
-RUN mkdir workspace && cp temp/package.json workspace/
+RUN mkdir workspace && cp temp/node_modules workspace/
 
 WORKDIR workspace/
 
